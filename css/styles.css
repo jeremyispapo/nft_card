@@ -1,0 +1,19 @@
+:root {
+	/* Primary */
+	--color-primary-blue: hsl(215, 51%, 70%);
+	--color-primary-cyan: hsl(178, 100%, 50%);
+
+	/* Neutral */
+	--color-neutral-blue_main: hsl(217, 54%, 11%);
+	--color-neutral-blue_card: hsl(216, 50%, 16%);
+	--color-neutral-blue_line: hsl(215, 32%, 27%);
+	--color-neutral-white: hsl(0,0%,100%);
+
+	/* Typography */
+	--size-p: 1.8rem;
+	
+	--font-family: "Outfit";
+	--weight-light: 300; 
+	--weight-regular: 400; 
+	--weight-semi-bold: 600; 
+}
