@@ -12,8 +12,46 @@
 	/* Typography */
 	--size-p: 1.8rem;
 	
-	--font-family: "Outfit";
+	--font-family: "Outfit", sans-serif;
 	--weight-light: 300; 
 	--weight-regular: 400; 
 	--weight-semi-bold: 600; 
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 65.2%;
+	font-family: var(--font-family);
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--color-neutral-blue_main);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap
+}
+
+.card {
+	background-color: var(--color-neutral-blue_card);
+	width: 30rem;
+	height: 55rem;
+	border-radius: 1.5rem;
+}
+
+
+
+
+
+
+
+.attribution {
+	align-self: end;
 }
