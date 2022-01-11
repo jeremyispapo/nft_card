@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -26,18 +30,16 @@
       <h1 class="card__title">Equilibrium #3429</h1>
       <p class="card__paragraph">Our Equilibrium collection promotes balance and calm.</p>
       <div class="card__data">
-        <span class="card__price">0.041 ETH</span>
-        <span class="card__time">3 days left</span>
+        <span class="card__price"><span class="icon ethereum"></span> 0.041 ETH</span>
+        <span class="card__time"> <span class="icon clock"></span> 3 days left</span>
       </div>
       <section class="card__credits">
         <figure class="card__user">
           <img src="./images/image-avatar.png" alt="Creation of Jules Wyvern" class="card__image">
         </figure>
-        <p class="card__paragraph">Creation of <span class="card__paragraph--bold">Jules Wyvern</span></p>
+        <p class="card__paragraph card__paragraph--user">Creation of <span class="card__paragraph--bold">Jules Wyvern</span></p>
       </section>
-
     </section>
-    
   </section>
 
 

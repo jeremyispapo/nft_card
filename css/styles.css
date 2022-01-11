@@ -25,7 +25,7 @@
 }
 
 html {
-	font-size: 65.2%;
+	font-size: 62.5%;
 	font-family: var(--font-family);
 }
 
@@ -36,22 +36,124 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap
+	flex-direction: column;
+
 }
 
 .card {
 	background-color: var(--color-neutral-blue_card);
-	width: 30rem;
-	height: 55rem;
+	width: 33rem;
+	height: 56rem;
 	border-radius: 1.5rem;
+	padding: 2rem
+}
+
+.card__aside {
+	width: 29rem;
+	height: 29rem;
+}
+
+.card__figure {
+	width: 100%;
+	height: 100%;
+}
+
+.card__image {
+	width: 100%;
+	height: 100%;
+	border-radius: .8rem;
+	object-fit: cover;
+}
+
+.card__title {
+	color: var(--color-neutral-white);
+	font-size: 2.3rem;
+	margin-block: 2rem;
+	font-weight: var(--weight-semi-bold);
+}
+
+.card__paragraph {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: var(--weight-light);
+	font-size: var(--size-p);
+	margin-block: 2rem;
+}
+
+.card__data {
+	position: relative;
+	display: flex; 
+	justify-content: space-between;
+	font-size: var(--size-p);
+	margin-block-end: 4rem;
+}
+
+.card__data::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-neutral-blue_line);
+	bottom: -2rem;
+}
+
+
+.card__price {
+	display: flex;
+	color: var(--color-primary-cyan);
+	font-weight: var(--weight-semi-bold);
+}
+
+.icon {
+	display: block;
+	width: 2.3rem;
+	height: 2.3rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.ethereum {
+	background-image: url("../images/icon-ethereum.svg");
+}
+
+
+.card__time {
+	display: flex;
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: var(--weight-light);
+}
+
+.clock {
+	background-image: url("../images/icon-clock.svg");
+}
+
+.card__credits {
+	display: flex;
+}
+
+.card__user {
+	width: 3rem;
+	height: 3rem;
+	border-radius:30rem;
+	border: 1px solid var(--color-neutral-white)
+
+}
+
+.card__paragraph.card__paragraph--user {
+	margin-block: 0;
+	margin-inline-start: 1.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.card__paragraph--bold {
+	color: var(--color-neutral-white);
+	font-weight: var(--weight-semi-bold);
+	margin-inline-start: .5rem;
 }
 
 
 
-
-
-
-
 .attribution {
-	align-self: end;
+	justify-items: end;
 }
